@@ -1,0 +1,8 @@
+D:\ProjectsForEpam\Epam.Spring.Korban.1\Task3Console\bin\Debug\Task3Console.exe.config
+D:\ProjectsForEpam\Epam.Spring.Korban.1\Task3Console\bin\Debug\Task3Console.exe
+D:\ProjectsForEpam\Epam.Spring.Korban.1\Task3Console\bin\Debug\Task3Console.pdb
+D:\ProjectsForEpam\Epam.Spring.Korban.1\Task3Console\bin\Debug\Task3Logic.dll
+D:\ProjectsForEpam\Epam.Spring.Korban.1\Task3Console\bin\Debug\Task3Logic.pdb
+D:\ProjectsForEpam\Epam.Spring.Korban.1\Task3Console\obj\Debug\Task3Console.csprojResolveAssemblyReference.cache
+D:\ProjectsForEpam\Epam.Spring.Korban.1\Task3Console\obj\Debug\Task3Console.exe
+D:\ProjectsForEpam\Epam.Spring.Korban.1\Task3Console\obj\Debug\Task3Console.pdb

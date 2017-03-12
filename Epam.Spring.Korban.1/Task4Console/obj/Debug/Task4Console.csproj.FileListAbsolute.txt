@@ -1,0 +1,16 @@
+D:\ProjectForEpam\Epam.Spring.Korban.1\Task4Console\bin\Debug\Task4Console.exe.config
+D:\ProjectForEpam\Epam.Spring.Korban.1\Task4Console\bin\Debug\Task4Console.exe
+D:\ProjectForEpam\Epam.Spring.Korban.1\Task4Console\bin\Debug\Task4Console.pdb
+D:\ProjectForEpam\Epam.Spring.Korban.1\Task4Console\bin\Debug\Task4Logic.dll
+D:\ProjectForEpam\Epam.Spring.Korban.1\Task4Console\bin\Debug\Task4Logic.pdb
+D:\ProjectForEpam\Epam.Spring.Korban.1\Task4Console\obj\Debug\Task4Console.csprojResolveAssemblyReference.cache
+D:\ProjectForEpam\Epam.Spring.Korban.1\Task4Console\obj\Debug\Task4Console.exe
+D:\ProjectForEpam\Epam.Spring.Korban.1\Task4Console\obj\Debug\Task4Console.pdb
+D:\ProjectsForEpam\Epam.Spring.Korban.1\Task4Console\bin\Debug\Task4Console.exe.config
+D:\ProjectsForEpam\Epam.Spring.Korban.1\Task4Console\obj\Debug\Task4Console.exe
+D:\ProjectsForEpam\Epam.Spring.Korban.1\Task4Console\obj\Debug\Task4Console.pdb
+D:\ProjectsForEpam\Epam.Spring.Korban.1\Task4Console\bin\Debug\Task4Console.exe
+D:\ProjectsForEpam\Epam.Spring.Korban.1\Task4Console\bin\Debug\Task4Console.pdb
+D:\ProjectsForEpam\Epam.Spring.Korban.1\Task4Console\bin\Debug\Task4Logic.dll
+D:\ProjectsForEpam\Epam.Spring.Korban.1\Task4Console\bin\Debug\Task4Logic.pdb
+D:\ProjectsForEpam\Epam.Spring.Korban.1\Task4Console\obj\Debug\Task4Console.csprojResolveAssemblyReference.cache

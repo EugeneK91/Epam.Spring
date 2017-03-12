@@ -1,0 +1,4 @@
+D:\ProjectForEpam\Epam.Spring.Korban.1\Task2Logic\bin\Debug\Task2Logic.dll
+D:\ProjectForEpam\Epam.Spring.Korban.1\Task2Logic\bin\Debug\Task2Logic.pdb
+D:\ProjectForEpam\Epam.Spring.Korban.1\Task2Logic\obj\Debug\Task2Logic.dll
+D:\ProjectForEpam\Epam.Spring.Korban.1\Task2Logic\obj\Debug\Task2Logic.pdb
