@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Task2Logic</name>
+    </assembly>
+    <members>
+        <member name="T:Task2Logic.CalculateGDC">
+            <summary>
+            logic for compute GDC
+            </summary>
+        </member>
+        <member name="M:Task2Logic.CalculateGDC.GetEvklidNod(System.Int32,System.Int32,System.Double@)">
+            <summary>
+            Method that returned GDC for 2 values by Evklid algorithm
+            </summary>
+            <param name="firstValue">first value for compute of GDC</param>
+            <param name="secondValue">second value for compute of GDC</param>
+            <param name="runTime">return runtime of method</param>
+            <returns></returns>
+        </member>
+        <member name="M:Task2Logic.CalculateGDC.GetEvklidGDC(System.Int32,System.Int32,System.Int32,System.Double@)">
+            <summary>
+            Method that returned GDC for 2 values by Evklid algorithm
+            </summary>
+            <param name="firstValue">first value for compute of GDC</param>
+            <param name="secondValue">second value for compute of GDC</param>
+            <param name="thirdvalue">third value for compute of GDC</param>
+            <param name="runTime">return runtime of method</param>
+            <returns></returns>
+        </member>
+        <member name="M:Task2Logic.CalculateGDC.GetSteinGDC(System.Int32,System.Int32,System.Double@)">
+            <summary>
+            Method that returned GDC for 2 values by Stein's algorithm
+            </summary>
+            <param name="firstValue">first value for compute of GDC</param>
+            <param name="secondValue">second value for compute of GDC</param>
+            <param name="runTime">return runtime of method</param>
+            <returns></returns>
+        </member>
+        <member name="M:Task2Logic.CalculateGDC.GetSteinGDC(System.Int32,System.Int32,System.Int32,System.Double@)">
+            <summary>
+            Method that returned GDC for 3 values by Stein's algorithm
+            </summary>
+            <param name="firstValue">first value for compute of GDC</param>
+            <param name="secondValue">second value for compute of GDC</param>
+            <param name="thirdvalue">second value for compute of GDC</param>
+            <param name="runTime">return runtime of method</param>
+            <returns></returns>
+        </member>
+        <member name="M:Task2Logic.CalculateGDC.CalculateGDCByEvklidAlgorithm(System.Int32,System.Int32)">
+            <summary>
+            Method that compute GDC for 2 values by Evklid algorithm
+            </summary>
+            <param name="firstValue">first value for compute of GDC</param>
+            <param name="secondValue">second value for compute of GDC</param>
+            <returns></returns>
+        </member>
+        <member name="M:Task2Logic.CalculateGDC.CalculateGDCByEvklidAlgorithm(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Method that compute GDC for 3 values by Evklid algorithm
+            </summary>
+            <param name="firstValue">first value for compute of GDC</param>
+            <param name="secondValue">second value for compute of GDC</param>
+            <param name="thirdvalue">third value for compute of GDC</param>
+            <returns></returns>
+        </member>
+        <member name="M:Task2Logic.CalculateGDC.CalculateGDCBySteinsAlgorithm(System.Int32,System.Int32)">
+            <summary>
+            Method that compute GDC for 2 values by stein's algorithm
+            </summary>
+            <param name="firstValue">first value for compute of GDC</param>
+            <param name="secondValue">second value for compute of GDC</param>
+            <returns></returns>
+        </member>
+        <member name="M:Task2Logic.CalculateGDC.ComputerTime(System.Int32,System.Int32,System.Func{System.Int32,System.Int32,System.Int32},System.Double@)">
+            <summary>
+            Method return runtime of delegate with 2 parameters
+            </summary>
+            <param name="firstValue">first parameter</param>
+            <param name="secondValue">second parameter</param>
+            <param name="method">delegate for that compute runtime</param>
+            <param name="runTime">runtime of delegate</param>
+            <returns></returns>
+        </member>
+        <member name="M:Task2Logic.CalculateGDC.ComputerTime(System.Int32,System.Int32,System.Int32,System.Func{System.Int32,System.Int32,System.Int32,System.Int32},System.Double@)">
+            <summary>
+            Method return runtime of delegate with 3 parameters
+            </summary>
+            <param name="firstValue">first parameter</param>
+            <param name="secondValue">second parameter</param>
+            <param name="thirdValue">third parameter</param>
+            <param name="method">delegate for that compute runtime</param>
+            <param name="runTime">runtime of delegate</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

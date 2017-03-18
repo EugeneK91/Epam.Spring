@@ -1,0 +1,6 @@
+D:\ProjectForEpam\Epam.Spring.Korban.2\Task2Logic\bin\Debug\Task2Logic.dll
+D:\ProjectForEpam\Epam.Spring.Korban.2\Task2Logic\bin\Debug\Task2Logic.pdb
+D:\ProjectForEpam\Epam.Spring.Korban.2\Task2Logic\obj\Debug\Task2Logic.csprojResolveAssemblyReference.cache
+D:\ProjectForEpam\Epam.Spring.Korban.2\Task2Logic\obj\Debug\Task2Logic.dll
+D:\ProjectForEpam\Epam.Spring.Korban.2\Task2Logic\obj\Debug\Task2Logic.pdb
+D:\ProjectForEpam\Epam.Spring.Korban.2\Task2Logic\bin\Debug\Task2Logic.XML

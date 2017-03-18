@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Task1Logic</name>
+    </assembly>
+    <members>
+        <member name="M:Task1Logic.CalculateRoot.GetRootByNewtonMethod(System.Double,System.Int32)">
+            <summary>
+            Method that return square root of val
+            </summary>
+            <param name="val">value the square root that  need calculate</param>
+            <param name="degree">the pow of val</param>
+            <returns></returns>
+        </member>
+        <member name="M:Task1Logic.CalculateRoot.ValidateRootNewtonMethod(System.Int32,System.Double)">
+            <summary>
+            Comparers initial value before compute square root with restored value
+            </summary>
+            <param name="value">initial value</param>
+            <param name="restoredValue">restored value</param>
+            <returns></returns>
+        </member>
+        <member name="M:Task1Logic.CalculateRoot.Sqrt(System.Double,System.Int32)">
+            <summary>
+            Method that calculate square root of value
+            </summary>
+            <param name="val">value the square root that  need calculate</param>
+            <param name="degree">the power of val</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
