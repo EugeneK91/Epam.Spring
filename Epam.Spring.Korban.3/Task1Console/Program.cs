@@ -11,14 +11,23 @@ namespace Task1Console
     {
         static void Main(string[] args)
         {
-            var arr = new int[][] { new int[]{9,3,5,6},new int[]{1,2,3,4,5},new []{2,5,15} };
-            SortMultiArray.SortArray(arr,TypeSortEnum.AscendingSorBySumElements);
+            var arr = new int[][] { new int[]{9,3,5,6},new int[]{1,2,12},new []{2,5,15} };
+            SortMultiArray.BubleSortArray(arr,TypeSortEnum.AscendingSorBySumElements);
             SortMultiArray.ShowArray(arr);
 
-            SortMultiArray.SortArray(arr, TypeSortEnum.DescendingSorByMaxElements);
+            SortMultiArray.BubleSortArray(arr, TypeSortEnum.DescendingSorBySumElements);
             SortMultiArray.ShowArray(arr);
 
-            SortMultiArray.SortArray(arr, TypeSortEnum.AscendingSorByMinElements);
+            SortMultiArray.BubleSortArray(arr, TypeSortEnum.AscendingSorByMinElements);
+            SortMultiArray.ShowArray(arr);
+
+            SortMultiArray.BubleSortArray(arr, TypeSortEnum.DescendingSorByMinElements);
+            SortMultiArray.ShowArray(arr);
+
+            SortMultiArray.BubleSortArray(arr, TypeSortEnum.AscendingSorByMaxElements);
+            SortMultiArray.ShowArray(arr);
+
+            SortMultiArray.BubleSortArray(arr, TypeSortEnum.DescendingSorByMaxElements);
             SortMultiArray.ShowArray(arr);
         }
     }

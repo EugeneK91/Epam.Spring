@@ -7,10 +7,23 @@ using System.Threading.Tasks;
 
 namespace Task1Logic
 {
+    /// <summary>
+    /// Provides functionality for sort multiarray
+    /// </summary>
     public class SortMultiArray
     {
-        public static void SortArray(int[][] arr, TypeSortEnum typeSort)
+        #region Public Methods
+        /// <summary>
+        /// Sorts an array depending on the type
+        /// </summary>
+        /// <param name="arr">array</param>
+        /// <param name="typeSort">type of sort</param>
+        public static void BubleSortArray(int[][] arr, TypeSortEnum typeSort)
         {
+            if (arr == null)
+            {
+                throw new ArgumentException("array");
+            }
             switch (typeSort)
             {
                 case TypeSortEnum.AscendingSorBySumElements:
@@ -20,20 +33,24 @@ namespace Task1Logic
                     SortStringsArrayBySumElements(arr, AscDescSort.Descending);
                     break;
                 case TypeSortEnum.AscendingSorByMaxElements:
-                    SortStringsArrayByMaxElements(arr,AscDescSort.Ascending);
+                    SortStringsArrayByMaxElement(arr,AscDescSort.Ascending);
                     break;
                 case TypeSortEnum.DescendingSorByMaxElements:
-                    SortStringsArrayByMaxElements(arr, AscDescSort.Descending);
+                    SortStringsArrayByMaxElement(arr, AscDescSort.Descending);
                     break;
                 case TypeSortEnum.AscendingSorByMinElements:
-                    SortStringsArrayByMinElements(arr, AscDescSort.Ascending);
+                    SortStringsArrayByMinElement(arr, AscDescSort.Ascending);
                     break;
                 case TypeSortEnum.DescendingSorByMinElements:
-                    SortStringsArrayByMinElements(arr, AscDescSort.Descending);
+                    SortStringsArrayByMinElement(arr, AscDescSort.Descending);
                     break;
             }
         }
 
+        /// <summary>
+        /// Show array
+        /// </summary>
+        /// <param name="arr">array</param>
         public static void ShowArray(int[][] arr)
         {
             for (int i = 0; i < arr.Length; i++)
@@ -44,9 +61,18 @@ namespace Task1Logic
                     Console.Write(arr[i][j] + ",");
                 }
                 Console.WriteLine();
-            }           
+            }
+            Console.WriteLine();
         }
+        #endregion
 
+        #region Private Methods
+
+        /// <summary>
+        /// Sort an array by sum of string elements
+        /// </summary>
+        /// <param name="arr">array</param>
+        /// <param name="typeSort">type of sort: may be ascending or descending</param>
         private static void SortStringsArrayBySumElements(int[][] arr,AscDescSort typeSort)
         {
             for (var i = 0; i < arr.Length; i++)
@@ -65,6 +91,7 @@ namespace Task1Logic
                     {
                         sum2 += arr[k][t];
                     }
+
                     if (typeSort == AscDescSort.Ascending)
                     {
                         if (sum1 > sum2)
@@ -79,19 +106,26 @@ namespace Task1Logic
                             ReplaceArrayElements(arr, i, k);
                         }                     
                     }
+
                 }
             }        
         }
 
-        private static void SortStringsArrayByMaxElements(int[][] arr, AscDescSort typeSort)
+
+        /// <summary>
+        /// sort array strings in an array by max element of string 
+        /// </summary>
+        /// <param name="arr">array</param>
+        /// <param name="typeSort">type of sort: may be ascending or descending</param>
+        private static void SortStringsArrayByMaxElement(int[][] arr, AscDescSort typeSort)
         {
             for (var i = 0; i < arr.Length; i++)
             {
                 for (var k = i + 1; k < arr.Length; k++)
                 {
                     var maxElement1 = GetMaxElement(arr,i);
-
                     var maxElement2 = GetMaxElement(arr, k);
+
                     if (typeSort == AscDescSort.Ascending)
                     {
                         if (maxElement1 > maxElement2)
@@ -110,15 +144,20 @@ namespace Task1Logic
             }
         }
 
-        private static void SortStringsArrayByMinElements(int[][] arr, AscDescSort typeSort)
+        /// <summary>
+        /// sort array strings in an array by min element of string 
+        /// </summary>
+        /// <param name="arr">array</param>
+        /// <param name="typeSort">type of sort: may be ascending or descending</param>
+        private static void SortStringsArrayByMinElement(int[][] arr, AscDescSort typeSort)
         {
             for (var i = 0; i < arr.Length; i++)
             {
                 for (var k = i + 1; k < arr.Length; k++)
                 {
                     var maxElement1 = GetMinElement(arr, i);
-
                     var maxElement2 = GetMinElement(arr, k);
+
                     if (typeSort == AscDescSort.Ascending)
                     {
                         if (maxElement1 > maxElement2)
@@ -137,6 +176,12 @@ namespace Task1Logic
             }
         }
 
+        /// <summary>
+        /// replace  elements of array
+        /// </summary>
+        /// <param name="arr">array</param>
+        /// <param name="firstIndex">arr index of subarray</param>
+        /// <param name="secondIndex">arr index of subarray</param>
         private static void ReplaceArrayElements(int[][] arr,int firstIndex,int secondIndex)
         {
             var temp = arr[firstIndex];
@@ -144,30 +189,43 @@ namespace Task1Logic
             arr[secondIndex] = temp;
         }
 
-        private static int GetMaxElement(int[][]a,int index)
+        /// <summary>
+        /// Get max element of array
+        /// </summary>
+        /// <param name="arr">array</param>
+        /// <param name="index">index of subarrray</param>
+        /// <returns></returns>
+        private static int GetMaxElement(int[][]arr,int index)
         {
-            int max = a[index][0];
-            for (int i = 0; i < a[index].Length; i++)
+            int max = arr[index][0];
+            for (int i = 0; i < arr[index].Length; i++)
             {
-                if (a[index][i] > max)
+                if (arr[index][i] > max)
                 {
-                    max = a[index][i];
+                    max = arr[index][i];
                 }
             }
             return max;
         }
 
-        private static int GetMinElement(int[][] a, int index)
+        /// <summary>
+        /// Get min element of array
+        /// </summary>
+        /// <param name="arr">array</param>
+        /// <param name="index">index of subarrray</param>
+        /// <returns></returns>
+        private static int GetMinElement(int[][] arr, int index)
         {
-            int min = a[index][0];
-            for (int i = 0; i < a[index].Length; i++)
+            int min = arr[index][0];
+            for (int i = 0; i < arr[index].Length; i++)
             {
-                if (a[index][i] < min)
+                if (arr[index][i] < min)
                 {
-                    min = a[index][i];
+                    min = arr[index][i];
                 }
             }
             return min;
         }
+        #endregion 
     }
 }

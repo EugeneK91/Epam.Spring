@@ -7,3 +7,6 @@ D:\ProjectForEpam\Epam.Spring.Korban.2\Task2Console\obj\Debug\Task2Console.cspro
 D:\ProjectForEpam\Epam.Spring.Korban.2\Task2Console\obj\Debug\Task2Console.exe
 D:\ProjectForEpam\Epam.Spring.Korban.2\Task2Console\obj\Debug\Task2Console.pdb
 D:\ProjectForEpam\Epam.Spring.Korban.2\Task2Console\bin\Debug\Task2Logic.xml
+D:\ProjectsForEpam\Epam.Spring.Korban.2\Task2Console\bin\Debug\Task2Console.exe.config
+D:\ProjectsForEpam\Epam.Spring.Korban.2\Task2Console\obj\Debug\Task2Console.exe
+D:\ProjectsForEpam\Epam.Spring.Korban.2\Task2Console\obj\Debug\Task2Console.pdb
