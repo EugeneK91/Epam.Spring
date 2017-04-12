@@ -9,17 +9,40 @@ namespace Task1Logic
 {
     public class Customer:IFormattable
     {
-        public string Name { get; set; }
-        public string Telephone { get; set; }
-        public decimal Revenue { get; set; }
 
-        public string ToString(string format, IFormatProvider formatProvider)
+        #region Properties
+
+        /// <summary>
+        /// Name
+        /// </summary>
+        public string Name { get; set; }
+        /// <summary>
+        /// Telephone
+        /// </summary>
+        public string Telephone { get; set; }
+        /// <summary>
+        /// Revenue
+        /// </summary>
+        public decimal Revenue { get; set; }
+        #endregion
+
+        #region Constructors
+
+        public Customer() { }
+
+        #endregion
+
+        #region Public Methods
+        /// <summary>
+        /// implementation tostring for IFormattable, G-generalformat, N - Name,R - Revenue, T - Telephone
+        /// </summary>
+        /// <param name="format"></param>
+        /// <param name="formatProvider"></param>
+        /// <returns></returns>
+        public string ToString(string format, IFormatProvider formatProvider = null)
         {
-            //"G" is .Net's standard for general formatting--all
-            //types should support it
             if (format == null) format = "G";
 
-            // is the user providing their own format provider?
             if (formatProvider != null)
             {
                 var formatter = formatProvider.GetFormat(this.GetType()) as ICustomFormatter;
@@ -29,23 +52,22 @@ namespace Task1Logic
                 }
             }
 
-            //formatting is up to us, so let's do it
             if (format == "G")
             {
                 return string.Format("({0}, {1}, {2})", Name, Telephone, Revenue);
             }
 
-            StringBuilder sb = new StringBuilder();
+            var sb = new StringBuilder("Customer record: ");
             int sourceIndex = 0;
             while (sourceIndex < format.Length)
             {
                 switch (format[sourceIndex])
                 {
                     case 'N':
-                        sb.Append(Name.ToString());
+                        sb.Append(Name);
                         break;
                     case 'T':
-                        sb.Append(Telephone.ToString());
+                        sb.Append(Telephone);
                         break;
                     case 'R':
                         sb.Append(Revenue.ToString());
@@ -58,31 +80,6 @@ namespace Task1Logic
             }
             return sb.ToString(); 
         }
+        #endregion
     }
-
-    public class TypeFormatter : IFormatProvider, ICustomFormatter
-    {
-        public object GetFormat(Type formatType)
-        {
-            if (formatType == typeof(ICustomFormatter)) return this;
-            return Thread.CurrentThread.CurrentCulture.GetFormat(formatType);
-        }
-
-        public string Format(string format, object arg, IFormatProvider formatProvider)
-        {
-            string value;
-            IFormattable formattable = arg as IFormattable;
-            if (formattable == null)
-            {
-                value = arg.ToString();
-            }
-            else
-            {
-                value = formattable.ToString(format, formatProvider);
-            }
-            return string.Format("Customer record: {0}", value);
-        }
-    }
-
-
 }

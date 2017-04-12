@@ -11,8 +11,9 @@ namespace Task2Logic
     {
         void AddBook(Book book);
         void RemoveBook(Book book);
-        Book FindByTag(List<Book> books, Func<Book, bool> predicate);
-        void SortBooksByTag(List<Book> books,Func<Book,bool> predicate);
+        Book FindByTag(List<Book> books, Predicate<Book> predicate);
+        void SortBooksByTag(List<Book> books, Comparison<Book> predicate);
         List<Book> GetBooks();
+        void PrintBooks(List<Book> books);
     }
 }
